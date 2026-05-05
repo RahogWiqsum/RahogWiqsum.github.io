@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+    PAGE TITLE — replace "Rahog Wiqsum" with your real name when ready
+  ============================================================ -->
+  <title>Gerald's Game Design Portfolio</title>
+
+  <!-- Google Fonts loaded here. If you change fonts in style.css,
+       update this URL too. Use fonts.google.com to build a new URL. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- ALL styles live in style.css — this is the only style reference -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Halftone dot texture overlay — purely decorative, ignore this -->
+  <div class="halftone-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================================
+    NAV — edit link text and href anchors here
+  ============================================================ -->
+  <nav class="navbar">
+    <!-- CHANGE: decorative issue tag -->
+    <div class="nav-issue-tag">ISSUE ARCHIVE</div>
+    <ul class="nav-links">
+    </ul>
+  </nav>
+
+  <!-- ============================================================
+    HERO — edit speech bubble, name, tagline, badge here
+  ============================================================ -->
+  <header class="hero" id="top">
+    <!-- CHANGE: punchy one-liner in the speech bubble -->
+    <div class="speech-bubble" aria-hidden="true">
+      <p>Official archive of all my devlogs!</p>
+    </div>
+
+    <div class="hero-inner">
+      <!-- CHANGE: replace with your real name when ready -->
+      <h1 class="hero-name">Gerald<br/>Garcia</h1>
+      <!-- CHANGE: short tagline under name -->
+      <p class="hero-tagline">Every issue you could ever want is here!</p>
+      <!-- CHANGE: decorative badge text -->
+      <div class="hero-badge">EST. 2008</div>
+    </div>
+  </header>
+
+  <section class="section games-section" id="games">
+    <div class="section-label">[ Previously... ]</div>
+    <h2 class="section-title">Devlogs</h2>
+
+    <div class="games-list">
+
+      <!-- Most recent devlog -->
+      <article class="game-panel">
+        <div class="game-info">
+          <div class="game-genre-tag">05 / 04 / 2026 | ISSUE NO. 002</div>
+          <h3 class="game-title">How I Made Keystroke</h3>
+          <p class="game-desc">An explanation of my process behind making my second game, "Keystroke".</p>
+          <a class="game-link" href="Devlogs/Issue 002/Issue 002.html" rel="noopener">View File →</a>
+        </div>
+      </article>
+
+      <!-- 2nd most recent -->
+      <article class="game-panel">
+        <div class="game-info">
+          <div class="game-genre-tag">05 / 04 / 2026 | ISSUE NO. 001</div><!-- CHANGE: genre -->
+          <h3 class="game-title">How I Made Gold Rush</h3><!-- CHANGE: title -->
+          <p class="game-desc">An explanation of my process behind making my first game, "Gold Rush".</p><!-- CHANGE: desc -->
+          <a class="game-link" href="Devlogs/Issue 001/Issue 001.html" rel="noopener">View File →</a><!-- CHANGE: href -->
+        </div>
+      </article>
+
+      <!-- 3rd most recent -->
+      <article class="game-panel">
+        <div class="game-info">
+          <div class="game-genre-tag">00 / 00 / 0000 | ISSUE NO. 000</div>
+          <h3 class="game-title">[ REDACTED ]</h3>
+          <p class="game-desc">[ REDACTED ]</p>
+          <a class="game-link" href="#" rel="noopener"></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Gerald Garcia. All Bananas Reserved.</span>
+    <span class="footer-tag">PRINTED IN A WAFFLE HOUSE (Probably)</span>
+  </footer>
+
+  <script>
+    // Copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+    PAGE TITLE — replace "Rahog Wiqsum" with your real name when ready
+  ============================================================ -->
+  <title>Gerald's Game Design Portfolio</title>
+
+  <!-- Google Fonts loaded here. If you change fonts in style.css,
+       update this URL too. Use fonts.google.com to build a new URL. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- ALL styles live in style.css — this is the only style reference -->
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+
+  <!-- Halftone dot texture overlay — purely decorative, ignore this -->
+  <div class="halftone-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================================
+    NAV — edit link text and href anchors here
+  ============================================================ -->
+  <nav class="navbar">
+    <!-- CHANGE: decorative issue tag -->
+    <div class="nav-issue-tag">ISSUE NO. 003</div>
+    <ul class="nav-links">
+    </ul>
+  </nav>
+  <!-- ============================================================
+    ABOUT — edit bio paragraphs and stat block values here
+  ============================================================ -->
+  <section class="section about-section" id="about">
+    <div class="section-label">[ INFO ]</div>
+    <h2 class="section-title">The Fear of Making Games Wrong</h2>
+
+    <div class="about-layout">
+      <div class="about-text">
+        <p>Hey fellas. It's been about 9 months since I released Keystroke. And if I'm gonna be honest, I haven't worked on any project since then. But I think I can narrow the reason down to 1 issue:</p>
+        <br>
+        <p>I'm scared of making my games "wrong".</p>
+        <br>
+        <p>What I mean is that I'm scared of building my games in a sub-optimal way. And this fear stems from how my first 2 games turned out. Yes, I did manage to ship them to itch.io, but objectively speaking, they're not very good games. And I think I had a decent understanding of that when I released them, but looking at it with now 9 months of hindsight, they're really bad games.</p>
+        <br>
+        <p>By the end of the development cycles for both games, I was kinda just done with wanting to make them. The code became harder to scale. Yeah, some aspects were definitely done well, but adding more content felt more like a chore than actually making a game.</p>
+        <br>
+        <p>And it's not like I haven't had ideas. I've had several that I think <i>could</i> work, but every time I start, there's a question of "how can I build this in the most efficient way possible". And the answer to that normally involves things I've never touched in Godot, and there's a big fear of doing it wrong.</p>
+        <br>
+        <p>I think the reason for that fear is that if I start a project and build something in a way that makes it harder to scale later on, I'll ship another project I'm not satisfied with. And I don't want my ideas to come out half-baked. That feels like every idea has potential that's just wasted.</p>
+        <br>
+        <p>All of that being said, I am currently working on building a better understanding of Godot. I've messed around with resources more, and I've also experimented with making some stuff that could be useful for my next project. It's very hard to say when I'll actually have my next game done, but I do think I just have to kinda go for it and figure it out.</p>
+        <br>
+        <p>If you actually read this far, thanks for reading my yapping. Appreciate it. </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Gerald Garcia. All Bananas Reserved.</span>
+    <span class="footer-tag">PRINTED IN A WAFFLE HOUSE (Probably)</span>
+  </footer>
+
+  <script>
+    // Copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

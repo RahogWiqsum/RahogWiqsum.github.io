@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+    PAGE TITLE — replace "Rahog Wiqsum" with your real name when ready
+  ============================================================ -->
+  <title>Gerald's Game Design Portfolio</title>
+
+  <!-- Google Fonts loaded here. If you change fonts in style.css,
+       update this URL too. Use fonts.google.com to build a new URL. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- ALL styles live in style.css — this is the only style reference -->
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+
+  <!-- Halftone dot texture overlay — purely decorative, ignore this -->
+  <div class="halftone-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================================
+    NAV — edit link text and href anchors here
+  ============================================================ -->
+  <nav class="navbar">
+    <!-- CHANGE: decorative issue tag -->
+    <div class="nav-issue-tag">ISSUE NO. 001</div>
+    <ul class="nav-links">
+    </ul>
+  </nav>
+  <!-- ============================================================
+    ABOUT — edit bio paragraphs and stat block values here
+  ============================================================ -->
+  <section class="section about-section" id="about">
+    <div class="section-label">[ INFO ]</div>
+    <h2 class="section-title">How I made Gold Rush</h2>
+
+    <div class="about-layout">
+      <div class="about-text">
+          <p>Hey fellas. It's been about 3 months since I've released Gold Rush. I figured I'd go into my thought process when I was developing the game to hopefully give some perspective about what making my first game was like.</p>
+          <p>The idea came to me sometime in early December. I had just gotten a certification at EVIT, and wanted to pick up and learn Godot. So I had an idea for an idle game. I figured it'd be a simple learning project.</p>
+          <p>But I had a problem: Idle games are boring.</p>
+          <p>And I didn't want to make something that was boring. I wanted to make something that was actually (at least a little bit) fun. Not something that you'd just leave running in the background when you play something else. So I thought about how to make an idle game more interesting. And ultimately, I landed on adding a time limit with a quota.</p>
+          <p>Within a couple days, I had a prototype put together. Got some feedback on the concept, and people seemed to like it. So I started properly putting together the game.
+          <!--Gold Rush prototype screenshot-->
+        <article class="game-panel">
+          <div class="game-screenshot">
+            <img src="Gold Rush Prototype.png">
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">[DECLASSIFIED]</h3>
+            <p class="game-desc">Gold Rush prototype screenshot from early Janurary.</p>
+          </div>
+        </article>
+        <br>
+          <p>When I made the game itself, it was actually a separate Godot project from the original prototype. When I was working on the prototype, the code was a mess. This was mainly because I was almost brand new to working in Godot, and just wanted to get a concept off the ground. So I made a whole new Godot project with the logic that I'll refactor all the code later (I did, in fact, NOT do that).</p>
+          <p>When I was actually making the final game, I didn't actually do that much refactoring of the code. And it got worse around the time of the game's release when I just wanted to be done with it. On the surface, the game seems fine, but the code itself was a huge pain in the ass to scale.</p>
+          <!--Gold Rush code screenshot-->
+          <article class="game-panel">
+          <div class="game-screenshot">
+            <img src="Gold Rush Code Screenshot.png">
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">[DECLASSIFIED]</h3>
+            <p class="game-desc">A screenshot of the Gold Rush "animation managers". Systems like this exist for every "screen" in the game (the game itself, the shop, etc.)</p>
+          </div>
+        </article>
+        <br>
+        <p>During the final week before the game dropped, I passed it around to people at EVIT and gave them one job: break the game as badly as they could.</p>
+        <br>
+        <p>One guy was able to completely break how the animations looked and played. Hell, one guy even figured out how to get negative gold. Yeah it was a pain in the ass to fix all those problems, but it did, objectively, make the game better for the release.</p>
+        <p>The day after the release, I got to have the game running on a computer at EVIT expo and some people played it. That felt super cool, and one guy even saved the link to play it again later.</p>
+        <p>I put out a v1.1 update and haven't touched the project since. And I can't say I plan on it right now. But I did really enjoy working on this first project, despite how messy the code was. It made me get familiar with actually finishing my projects. And it's pushed me to keep working on other stuff.</p>
+        <p>If you've played Gold Rush and enjoyed it, I really do appreciate it. And if you've read this far, I appreciate that you were willing to read my unedited yapping. Thanks bro.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Gerald Garcia. All Bananas Reserved.</span>
+    <span class="footer-tag">PRINTED IN A WAFFLE HOUSE (Probably)</span>
+  </footer>
+
+  <script>
+    // Copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

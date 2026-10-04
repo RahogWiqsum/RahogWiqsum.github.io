@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+    PAGE TITLE — replace "Rahog Wiqsum" with your real name when ready
+  ============================================================ -->
+  <title>Gerald's Game Design Portfolio</title>
+
+  <!-- Google Fonts loaded here. If you change fonts in style.css,
+       update this URL too. Use fonts.google.com to build a new URL. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap" rel="stylesheet" />
+
+  <!-- ALL styles live in style.css — this is the only style reference -->
+  <link rel="stylesheet" href="../../style.css" />
+</head>
+<body>
+
+  <!-- Halftone dot texture overlay — purely decorative, ignore this -->
+  <div class="halftone-overlay" aria-hidden="true"></div>
+
+  <!-- ============================================================
+    NAV — edit link text and href anchors here
+  ============================================================ -->
+  <nav class="navbar">
+    <!-- CHANGE: decorative issue tag -->
+    <div class="nav-issue-tag">ISSUE NO. 002</div>
+    <ul class="nav-links">
+    </ul>
+  </nav>
+  <!-- ============================================================
+    ABOUT — edit bio paragraphs and stat block values here
+  ============================================================ -->
+  <section class="section about-section" id="about">
+    <div class="section-label">[ INFO ]</div>
+    <h2 class="section-title">How I made Keystroke</h2>
+
+    <div class="about-layout">
+      <div class="about-text">
+        <p>Hey fellas, it's been about 3 weeks since I've made Keystroke, and I wanted to go over my thought process during the game's development.</p>
+        <br>
+        <p>Originally, I wanted to make something a little more fun and engaging than my previous game, Gold Rush, was. 
+          While I had the goal of making Gold Rush a lot more engaging than a regular idle game, all the player would have to do is build up enough money to get one bomb, 
+          and then you couldn't possibly lose your run. The "meta" had become almost the opposite of what I wanted Gold Rush to be in the first place.</p>
+        <p>With that in mind, I planned on making a game that was a lot more involved throughout an entire playthrough rather than up until a certain point of the game's 
+          progression. So I started messing around with making the player type words.</p>
+        <p>I wanted some sort of enemy for the player to fight, but I wasn't quite sure what I wanted the enemies to be yet. Once I had the typing system down, I wanted a way 
+          to upgrade your stuff, so I added a levelling system for both the player and the keyboard itself.</p>
+        <p>I then added "conditions" to enemies, making them have certain effects. For example, "Hard of Hearing" would mean you'd have to toggle Caps Lock to deal damage to 
+          an enemy. Or a resistance to vowels would mean your damage is cut in half every time you type one. This gave enemies some amount of variety, but I still needed to 
+          figure out what I wanted the enemies themselves to look like. And by this point, I still didn't have a visual style for the game.</p>
+        <p>After adding some items, I had an idea for the enemies and what I wanted them to represent: computer viruses. I figured since the player was typing to deal 
+          damage to something, maybe they're like their own antivirus, or something like that.</p>
+          <article class="game-panel">
+          <div class="game-screenshot">
+            <img src="Keystroke Enemy in Engine.png">
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">[DECLASSIFIED]</h3>
+            <p class="game-desc">Keystroke's enemy scene in the Godot Engine. Each enemy has a type of virus that it represents, as well as a condition.
+              They also type words to damage the player in return.
+            </p>
+          </div>
+        </article>
+        <br>
+        <p>This is also how I found the game's visual style. I had an idea for an adware enemy where you have to close out of pop-ups that block your vision. When I started
+          doing the artwork, it ended up looking almost like a Windows98-esq app window with an enemy inside. I ultimately decided to center the game's entire visual style around
+          this concept, and I think it looks pretty solid. </p>
+        <!--Keystroke enemy screenshot-->
+        <article class="game-panel">
+          <div class="game-screenshot">
+            <img src="Keystroke Full Screenshot.png">
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">[DECLASSIFIED]</h3>
+            <p class="game-desc">A full screenshot of Keystroke with the stylized UI implemented. Designed to look like Windows98. 
+            </p>
+          </div>
+        </article>
+        <br>
+        <p>My next big challenge was adding a shop system that I was happy with. I knew I wanted the player to be able to buy utility items like health potions, but I also wanted
+          to be able to buy words to add to your word bank. The words were not very hard to add. All that took was adding buttons, calculaing a cost depending on the word, and 
+          "applying" that word to a button to make the word purchasable. 
+          Once the basic structure was finished, I wanted to work on being able to make items efficiently. To do this, I made a
+          resource that has an item name, price, and some other values. This resource is used as a template for every item in the game. All I had to do was make a new item,
+          fill in all the info, and the shop system's code handles the rest.
+        </p>
+        <!--Keystroke item resource screenshot-->
+        <article class="game-panel">
+          <div class="game-screenshot">
+            <img src="Godot Resource.png">
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">[DECLASSIFIED]</h3>
+            <p class="game-desc">A filled in item resource in Keystroke's Godot project. Each field is filled in with some info for the game to display in the shop.
+            </p>
+          </div>
+        </article>
+        <br>
+        <p>Making it so the player can actually use the items was more difficult. I wasn't sure how to do it efficiently, so I just took what I did for Gold Rush and made a
+          row that the player can scroll through and click to use the items. This was annoying to do as I haven't used many control nodes prior to this, but I did eventually figure
+          it out.
+        </p>
+        <!--Keystroke item selector scene tree-->
+        <article class="game-panel">
+          <div class="game-screenshot">
+            <img src="Item Selector Scene Tree.png">
+          </div>
+          <div class="game-info">
+            <h3 class="game-title">[DECLASSIFIED]</h3>
+            <p class="game-desc">The Godot scene tree of the game's item selector. The player can scroll down to find more items to use.
+            </p>
+          </div>
+        </article>
+        <br>
+        <p>Early on in this project, I knew I wanted to have music in this game. But there was a slight problem, and it's that I know almost nobody who makes music. I think I can
+          count the number of people on one hand. The best person I thought I could message for this was my friend Winston. He's made these sort of lofi hip-hop beats before, so
+          I figured it couldn't hurt to ask him to work on the soundtrack. He agreed to do it, and put together the first song on a Discord call in half an hour. That song
+          ultimately ended up being the shop's theme. Maybe a week or so later, the soundtrack was done, and I put out the game on itch.io.
+        </p>
+        <br>
+        <p>I learned a lot from this project. It was my second game I've actually finished. And I put some amount of thought into how to make a lot of items easily. Yeah, it is
+          very far from perfect, but I'm still proud of this. If you've played it, I truly do appreciate it. And if you've somehow read through all of this, thank you. It took a
+          while to write this but it was fun, so I can't complain too much.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Gerald Garcia. All Bananas Reserved.</span>
+    <span class="footer-tag">PRINTED IN A WAFFLE HOUSE (Probably)</span>
+  </footer>
+
+  <script>
+    // Copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

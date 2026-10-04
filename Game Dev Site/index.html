@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gerald's Game Design Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="halftone-overlay" aria-hidden="true"></div>
+
+  <nav class="navbar">
+    <!-- top bar -->
+    <div class="nav-issue-tag">ISSUE NO. 000</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#games">Games</a></li>
+      <li><a href="#devlog">Devlog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Speech bubble -->
+  <header class="hero" id="top">
+    <div class="speech-bubble" aria-hidden="true">
+      <p>I make games. You might even enjoy them!</p>
+    </div>
+
+    <div class="hero-inner">
+      <h1 class="hero-name">Gerald<br/>Garcia</h1>
+      <p class="hero-tagline">Indie Game Designer (and Pokemon Enthusiast)</p>
+      <div class="hero-badge">EST. 2008</div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="section about-section" id="about">
+    <div class="section-label">[ INFO ]</div>
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-layout">
+      <div class="about-text">
+        <p>Hey! I'm Gerald, and I'm a Phoenix based indie game designer. I've made two games so far: a timed idle game (I swear it makes sense just trust me bro), and a typing roguelike. </p>
+        <p>I love roguelikes, so that's naturally what a lot of my games end up as (even if it's unintentional). I love doing Pokemon challenge runs, and I think that's part of where my passion for roguelikes comes from, as odd as it seems.</p>
+        <p>At the moment, I'm pretty in-between projects. Not sure what I wanna work on yet.</p>
+      </div>
+
+      <aside class="stat-block">
+        <div class="stat-block-title">WHO THE HELL AM I?</div>
+        <ul>
+          <li><span class="stat-label">Classes</span><span class="stat-val">Game Designer <br> Pokemon Nuzlocker</span></li>
+          <li><span class="stat-label">Interests</span><span class="stat-val">Roguelikes <br> Pokemon Nuzlockes</span></li>
+          <li><span class="stat-label">Games Completed</span><span class="stat-val">2</span></li>
+          <li><span class="stat-label">Nuzlockes Won</span><span class="stat-val">1</span></li>
+          <li><span class="stat-label">Status</span><span class="stat-val">Eating Bananas</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Games -->
+  <section class="section games-section" id="games">
+    <div class="section-label">[ PROJECTS ]</div>
+    <h2 class="section-title">Games</h2>
+
+    <div class="games-list">
+
+      <!-- Gold Rush -->
+      <article class="game-panel">
+        <div class="game-screenshot">
+          <img src="Game Screenshots/Gold Rush Screenshot.png"> <!--Delete if you don't want a screenshot-->
+        </div>
+        <div class="game-info">
+          <div class="game-genre-tag">IDLE / ROGUELIKE</div>
+          <h3 class="game-title">Gold Rush</h3>
+          <p class="game-desc">An idle game where you mine for gold and eventually automate that process. Except you have a quota to hit within a certain time limit. Buy equipment to make it easier as your boss demands more gold. Good luck!</p><!-- CHANGE: desc -->
+          <p><a class="game-link" href="https://rahogwiqsum.itch.io/gold-rush" target="_blank" rel="noopener">PLAY NOW →</a> <a class="game-link" href="Devlogs/Issue 001/Issue 001.html" rel="noopener">Devlog →</a></p>
+        </div>
+      </article>
+
+      <!-- Keystroke -->
+      <article class="game-panel">
+        <div class="game-screenshot">
+          <img src="Game Screenshots/Keystroke Screenshot.png">
+        </div>
+        <div class="game-info">
+          <div class="game-genre-tag">ROGUELIKE</div>
+          <h3 class="game-title">Keystroke</h3>
+          <p class="game-desc">A game about typing really fast to fight computer viruses. Upgrade your keyboard to deal more damage as each enemy slowly becomes harder and harder to fight. Optimize your word bank to deal the most damage you possibly can.</p>
+          <p><a class="game-link" href="https://rahogwiqsum.itch.io/keystroke" target="_blank" rel="noopener">PLAY NOW →</a> <a class="game-link" href="Devlogs/Issue 002/Issue 002.html" rel="noopener">Devlog →</a></p>
+        </div>
+      </article>
+
+      <!-- GAME 3 -->
+      <article class="game-panel">
+        <div class="game-screenshot">
+          <div class="screenshot-placeholder"><span>CLASSIFIED</span></div>
+        </div>
+        <div class="game-info">
+          <div class="game-genre-tag">???</div>
+          <h3 class="game-title">[ REDACTED ]</h3>
+          <p class="game-desc">[ REDACTED ]</p>
+          <a class="game-link" href="#" target="_blank" rel="noopener"></a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section games-section" id="devlog">
+    <div class="section-label">[ Previously... ]</div>
+    <h2 class="section-title">Devlogs</h2>
+
+    <div class="games-list">
+
+      <!-- Most recent devlog -->
+      <article class="game-panel">
+        <div class="game-info">
+          <div class="game-genre-tag">10 / 04 / 2026 | ISSUE NO. 003</div>
+          <h3 class="game-title">The Fear of Making Games Wrong</h3>
+          <p class="game-desc">Why I haven't made a game in 9 months.</p>
+          <a class="game-link" href="Devlogs/Issue 003/Issue 003.html" rel="noopener">Read Now →</a>
+        </div>
+      </article>
+
+      <!-- 2nd most recent -->
+      <article class="game-panel">
+        <div class="game-info">
+          <div class="game-genre-tag">05 / 05 / 2026 | ISSUE NO. 002</div>
+          <h3 class="game-title">How I Made Keystroke</h3>
+          <p class="game-desc">An explanation of my process behind making my second game, "Keystroke".</p>
+          <a class="game-link" href="Devlogs/Issue 002/Issue 002.html" rel="noopener">Read Now →</a>
+        </div>
+      </article>
+
+      <!-- 3rd most recent -->
+      <article class="game-panel">
+        <div class="game-info">
+          <div class="game-genre-tag">05 / 05 / 2026 | ISSUE NO. 001</div>
+          <h3 class="game-title">How I Made Gold Rush</h3>
+          <p class="game-desc">An explanation of my process behind making my first game, "Gold Rush".</p>
+          <a class="game-link" href="Devlogs/Issue 001/Issue 001.html" rel="noopener">Read Now →</a>
+        </div>
+      </article>
+
+      <!--Archive of all devlogs-->
+      <article class="game-panel">
+        <div class="game-info">
+          <div class="game-genre-tag">?? / ?? / ????</div>
+          <h3 class="game-title">Other Previous Devlogs</h3>
+          <p class="game-desc">Wanna find an older archive? Try checking here!</p>
+          <a class="game-link" href="devlogs.html" rel="noopener">VIEW DEVLOGS →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact-section" id="contact">
+    <div class="section-label">[ MY SOCIALS ]</div>
+    <h2 class="section-title">Contact</h2>
+    <p class="contact-intro">Got some questions?<br/>Try contacting me and I'll respond if I can!</p>
+
+    <div class="contact-links">
+      <a class="contact-item" href="https://rahogwiqsum.itch.io/" target="_blank" rel="noopener">
+        <span class="contact-icon">&lt;/&gt;</span>
+        <span class="contact-platform">itch.io</span>
+        <span class="contact-handle">rahogwiqsum.itch.io</span>
+      </a>
+      <a class="contact-item" href="https://x.com/@Wiqsum" target="_blank" rel="noopener">
+        <span class="contact-icon">{}</span>
+        <span class="contact-platform">Twitter</span>
+        <span class="contact-handle">@Wiqsum</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Gerald Garcia. All Bananas Reserved.</span>
+    <span class="footer-tag">PRINTED IN A WAFFLE HOUSE (Probably)</span>
+  </footer>
+
+  <script>
+    // Copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
